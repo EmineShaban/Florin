@@ -310,6 +310,7 @@ div.swiper-button-prev {
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
 }
 
 
@@ -318,15 +319,33 @@ div.swiper-button-prev {
 
 .product h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-size: 400;
 
 }
 
 .products {
     margin: 50px 0;
+    margin-bottom: 90px;
 }
 
 .product a {
     font-size: 18px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.product img {
+    mix-blend-mode: multiply;
+}
+
+.product:hover {
+    background-color: #d8d9d97e;
 }
