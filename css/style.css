@@ -22,10 +22,11 @@ h6 {
 
 }
 
-img{
+img {
     width: 100%;
 }
-.container{
+
+.container {
     width: 65%;
     margin: auto;
 }
@@ -33,12 +34,12 @@ img{
 
 /* grey */
 
-.grey{
+.grey {
     background-color: #e5e5e5;
     padding: 40px 0;
 }
 
-.div-title{
+.div-title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -48,13 +49,13 @@ img{
 }
 
 
-.div-title hr{
-    border-bottom: 1px solid rgb(113, 113, 113);
+.div-title hr {
+    border-bottom: 1px solid rgb(203, 203, 203);
     width: 30%;
     margin: auto;
 }
 
-.grey ul{
+.grey ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -63,13 +64,269 @@ img{
     margin: 30px 0;
 }
 
-.grey ul li img{
+.grey ul li img {
     width: 30%;
     margin-bottom: 8px;
 }
 
 
- .grey-second li img{
-    width: 10%;
+.grey .grey-second li img {
+    width: 15%;
     margin-bottom: 8px;
+}
+
+.grey-p {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hero {
+    margin: 50px auto;
+}
+
+.hero h1 {
+    text-align: center;
+    color: #b40024;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.hero h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+}
+
+.landing-70-years-header__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-70-years-header__title {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 26px;
+    color: #251619;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 85%;
+    width: 9em;
+    height: 7em;
+    padding-left: 3.2166em;
+    padding-top: 4.3em;
+    position: relative;
+    text-align: center;
+
+}
+
+.landing-70-years-header__title strong {
+    color: #fff;
+    font-weight: normal;
+    width: 3.9em;
+    height: 5em;
+    padding-right: 1em;
+    padding-top: 2em;
+    background-image: url(../images/heart.svg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heart {
+
+    margin: 50px auto;
+    text-align: center;
+}
+
+.heart-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-img {
+    width: 15%;
+
+}
+
+.heart h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+.heart h2 span {
+    font-size: 65px;
+    color: #b40024;
+    font-weight: 800;
+    font-style: oblique;
+}
+
+.heart p {
+    margin: 15px auto;
+    width: 40%;
+
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .banner-div {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .banner-div h2 {
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+
+
+}
+
+.order-btn {
+    margin: 15px auto;
+    display: block;
+    background-color: #b40024;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.order-btn a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.order-btn:hover {
+    background-color: white;
+}
+
+.order-btn:hover a {
+    color: #b40024;
+}
+
+.pink {
+    background-color: #feb4b6;
+}
+
+.black {
+    color: #000;
+    margin: 10px auto;
+
+}
+
+.sw-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sw-text img {
+    width: 120px;
+}
+
+.sw-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sw-text h3 {
+    font-size: 45px;
+    width: 65%;
+    font-weight: 500;
+    line-height: 1;
+
+}
+
+.sw-text h3 span {
+    display: block;
+    text-align: end;
+    margin-left: 25px;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.sw-text h4 {
+    font-size: 30px;
+}
+
+.sw-text p {
+    text-align: center;
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+    color: white;
+}
+
+
+.light-grey {
+    background-color: #ced0cd;
+}
+
+.blue {
+
+    background-color: #bfc7d5;
+}
+
+.grey-green {
+    background-color: #aebdc6;
+}
+
+.sw {
+    margin: 50px auto;
+}
+
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/* product */
+
+.product h2 {
+    text-align: center;
+    font-size: 28px;
+    font-size: 400;
+
+}
+
+.products {
+    margin: 50px 0;
+}
+
+.product a {
+    font-size: 18px;
 }
