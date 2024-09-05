@@ -205,26 +205,28 @@ img {
 .order-btn {
     margin: 15px auto;
     display: block;
-    background-color: #b40024;
     text-align: center;
-    width: 50%;
-    padding: 10px;
-    border-radius: 12px;
-    cursor: pointer;
 }
 
 .order-btn a {
+    background-color: #b40024;
+
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
     font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+
 }
 
-.order-btn:hover {
-    background-color: white;
-}
 
 .order-btn:hover a {
+    background-color: white;
     color: #b40024;
 }
 
@@ -349,3 +351,87 @@ div.swiper-button-prev {
 .product:hover {
     background-color: #d8d9d97e;
 }
+
+
+.product-div {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    column-gap: 40px;
+}
+
+.stars {
+    width: 80px;
+}
+
+ .cream-text h2{
+    color: #b40024;
+    font-size: 30px;
+ }
+
+ .stars-div{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 10px 0;
+ }
+
+ .price span{
+    color: #b40024;
+    font-weight: 700;
+    font-size: 23px;
+ }
+
+
+ .cream-text .order-btn a{
+    width: 25%;
+    font-size: 18px;
+
+ }
+
+ .description{
+    margin: 12px 0;
+ }
+
+ marquee{
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #feb4b6;
+    padding: 15px;
+ }
+
+ .title-product{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 25px;
+
+ }
+
+ .about p{
+    margin: 12px 0;
+ }
+
+ .about p a{
+    text-decoration: underline;
+    color: blue;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+
+
+ .ingr a{
+    color: blue;
+ }
+
+
+ .journey{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+
+ }
+
+
+ .journey img{
+    width: 100px;
+ }
