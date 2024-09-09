@@ -625,14 +625,100 @@ marquee {
     margin: 15px 0;
 }
 
-.step-title{
+.step-title {
     font-size: 20px;
-    margin: 20px 0; 
+    margin: 20px 0;
     margin-bottom: 10px;
 }
 
-.step{
+.step {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+/* reviews */
+.reviews-stars {
+    text-align: center;
+}
+
+.reviews-stars img {
+    width: 100px;
+}
+
+.reviews-stars div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    margin: 15px 0;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.review p {
+    color: #666 !important;
+
+}
+
+.reviev-start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviev-start div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.reviev-start img {
+    width: 90px;
+}
+
+.verif {
+    width: 25px !important;
+}
+
+.review-title {
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+
+}
+
+.review-name p:nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-name p {
+    margin-bottom: 7px;
+}
+
+.recomm {
+    margin: 15px 0;
+}
+
+.result2 .order-btn{
+    width: 35%; 
+}
+
+.result2 .order-btn a{ 
+    background-color: #FF3756;
+}
+
+.result2 .order-btn a:hover{
+    background-color: white;
+    color: #FF3756;
 }
