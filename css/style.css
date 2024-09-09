@@ -413,8 +413,7 @@ marquee {
 .about p a {
     text-decoration: underline;
     color: blue;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 600; 
 }
 
 
@@ -436,7 +435,10 @@ marquee {
     width: 100px;
 }
 
+.about p{
+    margin-bottom: 20px;
 
+}
 .about p b {
     font-size: 20px;
 }
@@ -721,4 +723,37 @@ marquee {
 .result2 .order-btn a:hover{
     background-color: white;
     color: #FF3756;
+}
+
+
+.steps-video{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 25px;
+    margin: 50px auto;
+    border: 1px solid #ccc
+}
+
+.steps-video p{
+    width: 80%;
+    margin: auto;
+}
+
+video{
+    width: 100%;
+}
+.about ul{
+    margin-left: 20px;
+}
+.about ul li{
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+.eye{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    margin: auto;
 }
