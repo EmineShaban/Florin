@@ -507,8 +507,8 @@ marquee {
 }
 
 .result2 {
-    width: 60%;
-    border-radius: 8px 0px 0px 8px;
+    width: 80%;
+    border-radius: 8px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -561,6 +561,7 @@ marquee {
     align-items: center;
     margin: auto;
     justify-content: center;
+    margin: 50px auto;
 }
 
 .result1 img {
@@ -585,4 +586,18 @@ marquee {
 .red span {
     font-size: 38px;
     font-weight: 900;
+}
+
+.application {
+    color: #333;
+    margin: 50px auto;
+    background-color: #f9f8f7;
+    padding: 50px 0;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
 }
