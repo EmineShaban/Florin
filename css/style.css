@@ -596,8 +596,43 @@ marquee {
 }
 
 
-.title{
+.title {
     text-align: center;
     font-size: 35px;
     font-weight: 400;
+    margin: 35px auto;
+}
+
+
+/* steps */
+
+.steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* align-items: center;  */
+    column-gap: 25px;
+
+}
+
+.sec img {
+    width: 25px;
+}
+
+.sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.step-title{
+    font-size: 20px;
+    margin: 20px 0; 
+    margin-bottom: 10px;
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
