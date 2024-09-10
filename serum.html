@@ -108,9 +108,11 @@
                 <p class="price">
                     <span>116.00€</span> / 50 ml
                 </p>
-                <div class="order-btn">
-                    <a href="step2.html" class="cta">BUY NOW</a>
-                </div>
+              
+                <form class="order-btn" action="./step2.html" method="get">
+                    <input style="display: none;" type="number" id="fname" name="fname" min="0" max="3"> 
+                    <input type="submit" class="cta" name="serum" value="BUY NOW">
+                </form>
                 <marquee direction="right">3 free samples with any order / Ships free
                 </marquee>
                 <h3 class="title-product">

@@ -35,37 +35,34 @@
         </ul>
     </header>
 
- 
+
     <hr class="order-hr">
     <div class="content">
         <div class="left-div">
             <div class="left">
-
-
                 <form id="order" action="./additional-links/thank-you.php">
                     <h3>Contact</h3>
                     <input type="email" placeholder="Email" required>
                     <input type="text" placeholder="Telephone" required>
 
                     <h3>Delivery</h3>
-                    <div class="names">
-                        <input type="text" placeholder="First name" required>
-                        <input type="text" placeholder="Last name" required>
-                    </div>
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+
 
                     <input type="text" placeholder="Adress" required>
                     <input type="text" placeholder="Apartment, etc. (optional)">
-                    <div class="names">
-                        <input type="text" placeholder="Postal code" required>
-                        <input type="text" placeholder="City" required>
-                    </div>
+
+                    <input type="text" placeholder="Postal code" required>
+                    <input type="text" placeholder="City" required>
+
 
                     <h3>Payment</h3>
 
                     <select name="delivery" id="delivery">
                         <option value="Cash">Cash on delivery</option>
                     </select>
- 
+
                     <button>Order Now</button>
                     <p class="rights">All rights reserved</p>
 
@@ -74,7 +71,7 @@
         </div>
         <div class="right-div">
             <div class="right">
-                <div class="matcha40">
+                <div class="cream">
 
 
                     <div class="cart">
@@ -101,7 +98,7 @@
                         <p><b>EUR 40.00</b></p>
                     </div>
                 </div>
-                <div class="matcha80">
+                <div class="serum">
 
 
                     <div class="cart">
@@ -129,7 +126,7 @@
 
                     </div>
                 </div>
-                <div class="matcha160">
+                <div class="eye22">
 
 
                     <div class="cart">
@@ -162,8 +159,8 @@
         </div>
     </div>
 
-   
- 
+
+
 
     <footer>
         <div class="footer-div">
@@ -172,8 +169,8 @@
                 <div class="additional-links">
                     <a href="index.html">Home</a>
                     <a href="cream.html">Cream</a>
-                    <a href="serum.html">Serum</a> 
-                    <a href="eye.html">Eye Cream</a> 
+                    <a href="serum.html">Serum</a>
+                    <a href="eye.html">Eye Cream</a>
                 </div>
             </div>
 
@@ -203,26 +200,26 @@
         </p>
     </footer>
 
-     
+
     <script>
 
         var myParam = location.search.split('fname=')[1].slice(0, 6);
 
-        let matcha40 = document.getElementsByClassName('matcha40')
-        let matcha80 = document.getElementsByClassName('matcha80')
-        let matcha160 = document.getElementsByClassName('matcha160')
- 
-        if (myParam == "&name1") {
-            matcha40[0].style.display = "block";
-            console.log(matcha40[0])
+        let cream = document.getElementsByClassName('cream')
+        let serum = document.getElementsByClassName('serum')
+        let eye = document.getElementsByClassName('eye')
 
-        } else if (myParam == "&name3") {
-            matcha80[0].style.display = "block";
-            console.log(matcha80[0])
+        if (myParam == "&cream") {
+            cream[0].style.display = "block";
+            console.log(cream[0])
 
-        } else if (myParam == "&name5") {
-            matcha160[0].style.display = "block";
-            console.log(matcha160[0])
+        } else if (myParam == "&serum") {
+            serum[0].style.display = "block";
+            console.log(serum[0])
+
+        } else if (myParam == "&eye11") {
+            eye[0].style.display = "block";
+            console.log(eye[0])
 
         }
     </script>
