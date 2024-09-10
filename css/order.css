@@ -2,7 +2,7 @@
 /* ORDER */
 .cream,
 .serum,
-.eye11 {
+.eye22 {
     display: none;
 }
 
@@ -114,10 +114,12 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 10px;
-    margin-bottom: 30px;
+    column-gap: 10px; 
 }
+.subtotal{
+    margin-top: 30px;
 
+}
 .cart img {
     width: 120px;
     background-blend-mode: multiply;
@@ -135,3 +137,7 @@ input::placeholder {
     width: 70%;
     margin: auto;
 }
+
+ select{
+    width: 50%;
+ }

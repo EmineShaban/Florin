@@ -673,6 +673,9 @@ marquee {
 
 
 /* reviews */
+.reviews{
+    margin: 60px auto;
+}
 .reviews-stars {
     text-align: center;
 }
