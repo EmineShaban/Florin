@@ -413,7 +413,7 @@ marquee {
 .about p a {
     text-decoration: underline;
     color: blue;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 
@@ -435,10 +435,11 @@ marquee {
     width: 100px;
 }
 
-.about p{
+.about p {
     margin-bottom: 20px;
 
 }
+
 .about p b {
     font-size: 20px;
 }
@@ -600,7 +601,7 @@ marquee {
 
 .title {
     text-align: center;
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 400;
     margin: 35px auto;
 }
@@ -712,21 +713,21 @@ marquee {
     margin: 15px 0;
 }
 
-.result2 .order-btn{
-    width: 35%; 
+.result2 .order-btn {
+    width: 35%;
 }
 
-.result2 .order-btn a{ 
+.result2 .order-btn a {
     background-color: #FF3756;
 }
 
-.result2 .order-btn a:hover{
+.result2 .order-btn a:hover {
     background-color: white;
     color: #FF3756;
 }
 
 
-.steps-video{
+.steps-video {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -735,25 +736,77 @@ marquee {
     border: 1px solid #ccc
 }
 
-.steps-video p{
+.steps-video p {
     width: 80%;
     margin: auto;
 }
 
-video{
+video {
     width: 100%;
 }
-.about ul{
+
+.about ul {
     margin-left: 20px;
 }
-.about ul li{
+
+.about ul li {
     list-style-type: disc;
     margin-bottom: 5px;
 }
 
-.eye{
+.eye {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 75%;
     margin: auto;
+}
+
+.grey .grey-second {
+    align-items: flex-start;
+}
+
+
+/* care */
+
+.care-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.care-title img {
+    width: 60px;
+}
+
+.we-care {
+    position: relative;
+}
+
+
+.we-care-div {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.bullets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+}
+
+.bullets img{
+    width: 70px;
+}
+
+
+.our-commitments svg {
+    width: 88px;
+    height: 88px;
+    margin-right: 0;
 }
