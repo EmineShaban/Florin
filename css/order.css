@@ -1,4 +1,3 @@
-
 /* ORDER */
 .cream,
 .serum,
@@ -70,7 +69,7 @@ input:focus {
 }
 
 
-  
+
 form h2 {
     color: #005280;
 }
@@ -114,12 +113,14 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 10px; 
+    column-gap: 10px;
 }
-.subtotal{
+
+.subtotal {
     margin-top: 30px;
 
 }
+
 .cart img {
     width: 120px;
     background-blend-mode: multiply;
@@ -133,11 +134,45 @@ input::placeholder {
     font-size: 18px;
 }
 
-.container{
+.container {
     width: 70%;
     margin: auto;
 }
 
- select{
+select {
     width: 50%;
- }
+}
+
+.upsells {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.upsells div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 25px auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upsells div img {
+    width: 75%;
+    margin: auto;
+}
+
+.upsells div button {
+    background-color: #b40024;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-size: 15px;
+    font-weight: 500;
+}

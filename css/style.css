@@ -32,37 +32,42 @@ img {
 }
 
 /* header */
-header{
+header {
     margin-bottom: 25px;
 }
-header img{
+
+header img {
     display: block;
     margin: auto;
     width: 170px;
 }
-header ul{
+
+header ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 10px 15px;
 }
-header ul li{
+
+header ul li {
     margin: 10px 15px;
     text-transform: uppercase;
 }
 
-header ul li a{
+header ul li a {
     color: #000;
-    
+
     padding: 10px 15px;
 
 
 }
-header ul li a:hover{
+
+header ul li a:hover {
     background-color: #b40024;
     color: white;
 }
+
 /* grey */
 
 .grey {
@@ -241,13 +246,13 @@ header ul li a:hover{
     text-align: center;
 }
 
-.cta{
-    background-color: #b40024; 
+.cta {
+    background-color: #b40024;
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
     font-size: 15px;
-    display: block; 
+    display: block;
     padding: 10px 25px;
     cursor: pointer;
     text-align: center;
@@ -256,7 +261,7 @@ header ul li a:hover{
 }
 
 
-.cta:hover{
+.cta:hover {
     background-color: white;
     color: #b40024;
 }
@@ -673,9 +678,10 @@ marquee {
 
 
 /* reviews */
-.reviews{
+.reviews {
     margin: 60px auto;
 }
+
 .reviews-stars {
     text-align: center;
 }
@@ -807,7 +813,7 @@ video {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .care-title img {
@@ -832,33 +838,36 @@ video {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: flex-start;
-    padding:  25px;
+    padding: 25px;
 }
 
-.bullets svg{
+.bullets svg {
     width: 50px;
     margin-bottom: 15px;
 
 }
-.bullets div:nth-child(2) svg{
+
+.bullets div:nth-child(2) svg {
     width: 60px;
 
 }
-.bullets div:nth-child(4) svg{
+
+.bullets div:nth-child(4) svg {
     width: 45px;
     margin-bottom: 10px;
 
 }
 
-.bullets div{
+.bullets div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    column-gap: 20px; 
+    column-gap: 20px;
     text-align: center;
 }
-.bullets div p b{
+
+.bullets div p b {
     margin-top: 15px;
     text-transform: uppercase;
 }
@@ -905,24 +914,27 @@ footer {
 /* Frequently Asked Questions */
 
 .faq-divs {
-    margin: 35px auto; 
-  }
-  
-  .button-group {
+    margin: 35px auto;
+}
+
+.button-group {
     margin-top: 5px;
     border: 1px solid rgba(221, 221, 221, 0.42);
-  }
-  .button-group p.q {
+}
+
+.button-group p.q {
     background: rgba(243, 243, 243, 1);
     padding: 20px;
-  }
-  p.a {
+}
+
+p.a {
     display: none;
     background: rgb(255, 255, 255);
     padding: 20px;
     margin-top: 5px;
     border-top: 1px solid rgba(221, 221, 221, 0.42);
-  }
-  .button-group p {
+}
+
+.button-group p {
     margin: 0;
-  }
+}

@@ -95,11 +95,10 @@
                         <p><b>EUR 82.00</b></p>
                     </div>
                 </div>
-                <div class="serum"> 
+                <div class="serum">
                     <div class="cart">
                         <div>
-                            <img src="./images/80002597_original_original_A.webp"
-                                alt="">
+                            <img src="./images/80002597_original_original_A.webp" alt="">
                             <h3>Super Restorative Remodelling Serum
                             </h3>
                         </div>
@@ -107,23 +106,22 @@
                     </div>
                     <div class="cart subtotal">
                         <p>Subtotal</p>
-                        <p>EUR 116.00</p> 
+                        <p>EUR 116.00</p>
                     </div>
                     <div class="cart">
                         <p>Shipping</p>
-                        <p>FREE</p> 
+                        <p>FREE</p>
                     </div>
                     <hr>
                     <div class="cart">
                         <p><b>Total</b></p>
-                        <p><b>EUR 116.00</b></p> 
+                        <p><b>EUR 116.00</b></p>
                     </div>
                 </div>
-                <div class="eye22"> 
+                <div class="eye22">
                     <div class="cart">
                         <div>
-                            <img src="./images/80068482_original_original_A.webp"
-                                alt="">
+                            <img src="./images/80068482_original_original_A.webp" alt="">
                             <h3>Total Eye Lift
                             </h3>
                         </div>
@@ -131,19 +129,42 @@
                     </div>
                     <div class="cart subtotal">
                         <p>Subtotal</p>
-                        <p>EUR 62.00</p> 
+                        <p>EUR 62.00</p>
                     </div>
                     <div class="cart">
                         <p>Shipping</p>
-                        <p>FREE</p> 
+                        <p>FREE</p>
                     </div>
                     <hr>
                     <div class="cart">
                         <p><b>Total</b></p>
-                        <p><b>EUR 62.00</b></p> 
+                        <p><b>EUR 62.00</b></p>
                     </div>
                 </div>
-            </div> 
+                <div class="upsells">
+                    <div class="upsell-cream">
+                        <img src="./images/80105569_original_original_1.webp" alt="">
+                        <h3>Super Restorative Rose Radiance Cream</h3>
+                        <p>EUR 82.00</p>
+                        <button onclick="addCream()">Add to cart</button>
+
+                    </div>
+                    <div class="upsell-serum">
+                        <img src="./images/80002597_original_original_A.webp" alt="">
+                        <h3>Super Restorative Remodelling Serum
+                        </h3>
+                        <p>EUR 116.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="upsell-eye">
+                        <img src="./images/80068482_original_original_A.webp" alt="">
+                        <h3>Total Eye Lift
+                        </h3>
+                        <p>EUR 62.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -197,19 +218,47 @@
         let serum = document.getElementsByClassName('serum')
         let eye = document.getElementsByClassName('eye22')
 
+
+        let creamUpsell = document.getElementsByClassName('upsell-cream')
+        let serumUpsell = document.getElementsByClassName('upsell-serum')
+        let eyeUpsell = document.getElementsByClassName('upsell-eye')
+
+
         if (myParam == "&cream") {
             cream[0].style.display = "block";
             console.log(cream[0])
+            creamUpsell[0].style.display = "none";
 
         } else if (myParam == "&serum") {
             serum[0].style.display = "block";
             console.log(serum[0])
+            serumUpsell[0].style.display = "none";
 
         } else if (myParam == "&eye11") {
             eye[0].style.display = "block";
             console.log(eye[0])
+            eyeUpsell[0].style.display = "none";
 
         }
+        function addCream() {
+            // cream[0].style.display = "block";
+            // cream[0].children[1].style.display = "none";
+            // cream[0].children[2].style.display = "none";
+            // cream[0].children[4].style.display = "none";
+
+            console.log("sss")
+
+             window.history.replaceState(null, null, "fname=&serum=BUY+NOW?arg=123");
+
+            let myParam2 = location.search.slice(0, 5)
+
+        console.log(myParam2)
+
+        }
+
+        
+        //Add a second foo parameter.
+
     </script>
     <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
     <script src='/cdn/js/fa_events.js'></script>
