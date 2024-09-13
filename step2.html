@@ -26,7 +26,7 @@
     </div>
 
     <header>
-        <img src="./images/logo-cba-70years.svg" alt="logo">
+        <img src="./images/logo-cba-70years.webp" alt="logo">
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="cream.html">cream</a></li>
@@ -77,7 +77,7 @@
                             <img src="./images/80105569_original_original_1.webp" alt="">
                             <h3>Super Restorative Rose Radiance Cream</h3>
                         </div>
-                        <p>EUR 82.00</p>
+                        <p class="price">EUR 82.00</p>
                     </div>
                     <div class="cart subtotal">
                         <p>Subtotal</p>
@@ -90,10 +90,10 @@
 
                     </div>
                     <hr>
-                    <div class="cart">
+                    <!-- <div class="cart">
                         <p><b>Total</b></p>
                         <p><b>EUR 82.00</b></p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="serum">
                     <div class="cart">
@@ -102,7 +102,7 @@
                             <h3>Super Restorative Remodelling Serum
                             </h3>
                         </div>
-                        <p>EUR 116.00</p>
+                        <p class="price">EUR 116.00</p>
                     </div>
                     <div class="cart subtotal">
                         <p>Subtotal</p>
@@ -113,10 +113,10 @@
                         <p>FREE</p>
                     </div>
                     <hr>
-                    <div class="cart">
+                    <!-- <div class="cart">
                         <p><b>Total</b></p>
                         <p><b>EUR 116.00</b></p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="eye22">
                     <div class="cart">
@@ -125,7 +125,7 @@
                             <h3>Total Eye Lift
                             </h3>
                         </div>
-                        <p>EUR 62.00</p>
+                        <p class="price">EUR 62.00</p>
                     </div>
                     <div class="cart subtotal">
                         <p>Subtotal</p>
@@ -136,12 +136,16 @@
                         <p>FREE</p>
                     </div>
                     <hr>
-                    <div class="cart">
+                    <!-- <div class="cart">
                         <p><b>Total</b></p>
                         <p><b>EUR 62.00</b></p>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="upsells">
+                <div class="cart">
+                    <p><b>Total</b></p>
+                    <p class="total">EUR 116.00</p>
+                </div>
+                <!-- <div class="upsells">
                     <div class="upsell-cream">
                         <img src="./images/80105569_original_original_1.webp" alt="">
                         <h3>Super Restorative Rose Radiance Cream</h3>
@@ -163,7 +167,7 @@
                         <p>EUR 62.00</p>
                         <button>Add to cart</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -198,7 +202,7 @@
                     <p class="contact-phone">Phone: 305-570-5258 </p>
                     <p class="contact-address">Address: 2166 Fulton Street
                         Clarksburg, WV 16301</p>
-                    <p class="contact-email">Email: support@clarins.com </p>
+                    <p class="contact-email">Email: support@florin.com </p>
                 </div>
             </div>
         </div>
@@ -223,6 +227,8 @@
         let serumUpsell = document.getElementsByClassName('upsell-serum')
         let eyeUpsell = document.getElementsByClassName('upsell-eye')
 
+        let total = document.getElementsByClassName('total')
+        let price = document.getElementsByClassName('price')
 
         if (myParam == "&cream") {
             cream[0].style.display = "block";
@@ -240,24 +246,29 @@
             eyeUpsell[0].style.display = "none";
 
         }
-        function addCream() {
-            // cream[0].style.display = "block";
-            // cream[0].children[1].style.display = "none";
-            // cream[0].children[2].style.display = "none";
-            // cream[0].children[4].style.display = "none";
+        // function addCream() {
+        //     cream[0].style.display = "block";
+        //     cream[0].children[1].style.display = "none";
+        //     cream[0].children[2].style.display = "none";
+        //     window.history.replaceState(null, null, "step2.html?fname=&serum=BUY+NOW&arg=cream");
+        //     let myParam2 = location.search.slice(-5);
+        //     console.log(creamUpsell[0])
+        //     creamUpsell[0].style.display = "none"
+        //     console.log(total)
+        //     console.log(price)
+        //     for (let i = 0; i < array.length; i++) {
+        //         const element = array[i];
+                
+        //     }
 
-            console.log("sss")
+        // }
 
-             window.history.replaceState(null, null, "fname=&serum=BUY+NOW?arg=123");
 
-            let myParam2 = location.search.slice(0, 5)
 
-        console.log(myParam2)
 
-        }
-
-        
-        //Add a second foo parameter.
+        // if (serum[0].style.display == "block") {
+        //     console.log("aa")
+        // }
 
     </script>
     <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
