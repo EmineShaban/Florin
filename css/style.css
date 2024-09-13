@@ -10,7 +10,9 @@ a {
     font-size: 16px;
     letter-spacing: 1px;
 }
-
+.mobile{
+    display: none;
+}
 h1,
 h2,
 h3,
@@ -86,7 +88,7 @@ header ul li a:hover {
 
 
 .div-title hr {
-    border-bottom: 1px solid rgb(203, 203, 203);
+    /* border-bottom: 1px solid rgb(203, 203, 203); */
     width: 30%;
     margin: auto;
 }
@@ -358,7 +360,7 @@ div.swiper-button-prev {
 .product h2 {
     text-align: center;
     font-size: 24px;
-    font-size: 400;
+    font-weight: 400;
 
 }
 
@@ -839,6 +841,7 @@ video {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: flex-start;
     padding: 25px;
+    column-gap: 25px;
 }
 
 .bullets svg {
@@ -937,4 +940,397 @@ p.a {
 
 .button-group p {
     margin: 0;
+}
+
+
+
+
+@media screen and (max-width: 1600px) {
+    .container {
+        width: 75%;
+    }
+
+    .product-div {
+        display: grid;
+        grid-template-columns: 550px 1fr;
+        column-gap: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 80%;
+    }
+
+    .product-div {
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        column-gap: 40px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+
+    .product-div {
+        display: grid;
+        grid-template-columns: 450px 1fr;
+        column-gap: 40px;
+    }
+
+    p,
+    li,
+    a { 
+        line-height: 1.3;
+        font-size: 14px; 
+    }
+    .hero h1 { 
+        font-size: 50px; 
+    }
+    .hero h3 {  
+        font-size: 35px;
+    }
+    .product a {
+        font-size: 16px;
+    }
+    .product h2 { 
+        font-size: 20px; 
+    }
+    .banner .banner-div h2 {
+        font-size: 35px;  
+    }
+
+    .w-text h3 {
+        font-size: 37px;
+    }
+    .sw-text h4 {
+        font-size: 24px;
+    }
+    .sw-text p { 
+        font-size: 16px; 
+    }
+
+    .we-care-div {
+        width: 75%;
+    }
+    .grey ul { 
+        column-gap: 15px;
+    }
+    .footer-div { 
+        width: 95%;
+    }
+    .retinol-div h2 {
+        font-size: 35px; 
+    }
+    .retinol-div { 
+        width: 85%;
+    }
+    .review {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
+}
+
+
+@media screen and (max-width: 994px) {
+    .container {
+        width: 90%;
+    }
+
+    .product-div {
+        display: grid;
+        grid-template-columns: 330px 1fr;
+        column-gap: 25px;
+    }
+
+    .we-care-div { 
+        position: unset; 
+        transform: none;
+        margin: auto;
+    }
+
+    .sw-text h3 {
+        font-size: 30px;
+        width: 75%;
+        
+    }
+
+    .grey ul li img {
+        width: 45%;
+    }
+
+    .grey .grey-second li img {
+        width: 25%; 
+    }
+
+    .title { 
+        font-size: 22px;
+    }
+
+    .sw-text p {
+        text-align: center;
+        width: 80%;
+        font-size: 14px;
+        line-height: 1.1;
+    }
+    .banner .banner-div h2 {
+        font-size: 30px;
+    }
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 93%;
+    }
+
+    .product-div {
+        display: block;
+        margin: 25px auto;
+    }
+    .cream-text{
+        margin-top: 30px;
+    }
+
+    .products{
+        display: block;
+        margin: 25px auto;
+    }
+
+    .product img{
+        width: 80%;
+        margin: auto;
+    }
+
+    .product{
+        width: 60%;
+        margin: 25px auto;
+    }
+    .banner .banner-div h2 {
+        font-size: 22px;
+    }
+    .banner-div .order-btn{
+        width: 75%;
+        margin: auto;
+    }
+
+    .sw-div{
+        display: block;
+        margin: auto;
+        width: 70%;
+        margin: auto;
+    }
+    .sw-text{
+        padding: 25px;
+    }
+    .we-care-div {
+        width: 90%;
+        margin: 25px auto;
+    }
+    div.swiper-button-next, div.swiper-button-prev {
+        color: gray;
+    }
+    .sw-div img:nth-child(2) {
+        display: none; 
+    }
+    .heart h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .journey {
+        width: 70%;
+        margin: auto;
+    }
+    .retinol-div {
+        width: 85%;
+        margin: auto;
+    }
+    .retinol{
+        display: block;
+        padding: 25px 0;
+    }
+    .result1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .result1 img {
+        width: 72%;
+    }
+    .result2 h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .result2 h4 {
+        color: #FF3756;
+        font-size: 18px;
+    }
+
+
+    p,
+    li,
+    a { 
+        font-size: 12px; 
+    }
+    .result2 .order-btn {
+        width: 70%;
+    }
+    .result2 {
+        width: 100%;
+    }
+
+    .steps {
+
+        display: block;
+    }
+
+    .step {
+        width: 75%;
+        margin: auto;
+    }
+
+    .review {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        column-gap: 10px;
+    }
+
+    .steps-video{
+        display: flex;
+        flex-direction: column-reverse; 
+    
+    }
+    .steps-video div{
+        padding: 15px;
+    }
+    .review-name p:nth-child(1) {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 600px) {
+
+    .mobile{
+        display: block;
+    }
+    
+    .heart h2 span {
+        font-size: 40px;
+    }
+    
+    .heart p {
+        margin: 15px auto;
+        width: 80%;
+    }
+    .banner .banner-div {
+        position: unset; 
+        transform: none;
+    }
+    .banner .banner-div h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .banner-div .order-btn {
+        width: 65%;
+        margin: auto;
+    }
+
+
+
+
+
+}
+@media screen and (max-width: 414px) {
+    .sw-div {
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin: auto;
+    }
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+header ul li {
+    margin: 10px;
+    text-align: center;
+}
+.journey {
+    width: 95%;
+    margin: auto;
+}
+
+.step {
+    width: 90%;
+    margin: auto;
+}
+header ul li a{
+    padding: 0;
+}
+.eye { 
+    width: 85%;
+}
+.review {
+    display: block;
+}
+.review-name{
+    margin-bottom: 10px;
+}
+.about p b {
+    font-size: 16px;
+}
+.title-product {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+.hero h3 {  
+    font-size: 25px;
+} 
+.title {
+    font-size: 18px;
+}
+.bullets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    padding: 25px;
+     gap: 25px;
+
+}
+
+.grey ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.hero h3 {
+    font-size: 20px;
+}
 }
