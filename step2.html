@@ -79,8 +79,9 @@
                         </div>
                         <p>EUR <span class="price">82.00 </span>
                         </p>
-                        <p><i class="fa-solid fa-xmark"></i></p>
                     </div>
+                    <p class="close" onclick="deleteCream()"><i class="fa-solid fa-xmark"></i></p>
+
                 </div>
                 <div class="serum">
                     <div class="cart">
@@ -91,9 +92,10 @@
                         </div>
                         <p>EUR <span class="price">116.00 </span>
                         </p>
-                        <p><i class="fa-solid fa-xmark"></i></p>
 
                     </div>
+                    <p class="close" onclick="deleteSerum()"><i class="fa-solid fa-xmark"></i></p>
+
                 </div>
                 <div class="eye22">
                     <div class="cart">
@@ -104,9 +106,10 @@
                         </div>
                         <p>EUR <span class="price">62.00 </span>
                         </p>
-                        <p><i class="fa-solid fa-xmark"></i></p>
 
                     </div>
+                    <p class="close" onclick="deleteEye22()"><i class="fa-solid fa-xmark"></i></p>
+
                 </div>
                 <hr>
                 <div class="cart">
@@ -200,34 +203,41 @@
 
         let total = document.getElementsByClassName('total')
         let price = document.getElementsByClassName('price')
+        let close = document.getElementsByClassName('close')
 
         if (myParam == "&cream") {
-            cream[0].style.display = "block";
+            cream[0].style.display = "flex";
             creamUpsell[0].style.display = "none";
+            close[0].style.display = "none"
+
         } else if (myParam == "&serum") {
-            serum[0].style.display = "block";
+            serum[0].style.display = "flex";
             serumUpsell[0].style.display = "none";
+            close[1].style.display = "none"
+
         } else if (myParam == "&eye11") {
-            eye[0].style.display = "block";
+            eye[0].style.display = "flex";
             eyeUpsell[0].style.display = "none";
+            close[2].style.display = "none"
+
         }
 
         function addCream() {
-            cream[0].style.display = "block";
+            cream[0].style.display = "flex";
             creamUpsell[0].style.display = "none"
             totalSum();
             addParamsCream();
         }
 
         function addEye() {
-            eye[0].style.display = "block";
+            eye[0].style.display = "flex";
             eyeUpsell[0].style.display = "none"
             totalSum();
             addParamsEye();
         }
 
         function addSerum() {
-            serum[0].style.display = "block";
+            serum[0].style.display = "flex";
             serumUpsell[0].style.display = "none"
             totalSum();
             addParamsSerum();
@@ -252,7 +262,6 @@
         function addParamsCream() {
             let myParam2 = location.href;
             let myParam5 = location.search;
-            console.log(myParam5)
             if (!myParam5.includes("cream")) {
                 window.history.replaceState(null, null, myParam2 + "&arg=cream");
             }
@@ -261,16 +270,15 @@
         function totalSum() {
             let sum = 0;
 
-            if (serum[0].style.display == "block") {
+            if (serum[0].style.display == "flex") {
                 sum += Number(serum[0].children[0].children[1].children[0].innerHTML)
             }
 
-            if (cream[0].style.display == "block") {
+            if (cream[0].style.display == "flex") {
                 sum += Number(cream[0].children[0].children[1].children[0].innerHTML)
             }
 
-            if (eye[0].style.display == "block") {
-                console.log(Number(eye[0].children[0].children[1].children[0].innerHTML))
+            if (eye[0].style.display == "flex") {
                 sum += Number(eye[0].children[0].children[1].children[0].innerHTML)
             }
             total[0].innerHTML = "EUR " + sum;
@@ -287,13 +295,30 @@
         }
 
 
-
+        function deleteCream() {
+            creamUpsell[0].style.display = "flex";
+            cream[0].style.display = "none";
+            location.search = location.search.replace("&arg=cream", "")
+            totalSum();
+        }
+        function deleteSerum() {
+            serumUpsell[0].style.display = "flex";
+            serum[0].style.display = "none";
+            location.search = location.search.replace("&arg=serum", "")
+            totalSum();
+        }
+        function deleteEye22() {
+            eyeUpsell[0].style.display = "flex";
+            eye[0].style.display = "none";
+            location.search = location.search.replace("&arg=eye", "")
+            totalSum();
+        }
     </script>
-    <!-- <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
+    <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
     <script src='/cdn/js/fa_events.js'></script>
     <script>
         fa_get_data('PageViewCover');
-    </script> -->
+    </script>
 </body>
 
 </html>
