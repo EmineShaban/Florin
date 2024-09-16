@@ -12,7 +12,7 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <script src="https://kit.fontawesome.com/470297acee.js" crossorigin="anonymous"></script>
     <!-- metrica!!!!!!! -->
 
 
@@ -77,22 +77,9 @@
                             <img src="./images/80105569_original_original_1.webp" alt="">
                             <h3>Super Restorative Rose Radiance Cream</h3>
                         </div>
-                        <p class="price">EUR 82.00</p>
-                    </div>
-                    <div class="cart subtotal">
-                        <p>Subtotal</p>
-                        <p>EUR 82.00</p>
-
-                    </div>
-                    <div class="cart">
-                        <p>Shipping</p>
-                        <p>FREE</p>
-
-                    </div>
-                    <hr>
-                    <div class="cart">
-                        <p><b>Total</b></p>
-                        <p><b>EUR 82.00</b></p>
+                        <p>EUR <span class="price">82.00 </span>
+                        </p>
+                        <p><i class="fa-solid fa-xmark"></i></p>
                     </div>
                 </div>
                 <div class="serum">
@@ -102,20 +89,10 @@
                             <h3>Super Restorative Remodelling Serum
                             </h3>
                         </div>
-                        <p class="price">EUR 116.00</p>
-                    </div>
-                    <div class="cart subtotal">
-                        <p>Subtotal</p>
-                        <p>EUR 116.00</p>
-                    </div>
-                    <div class="cart">
-                        <p>Shipping</p>
-                        <p>FREE</p>
-                    </div>
-                    <hr>
-                    <div class="cart">
-                        <p><b>Total</b></p>
-                        <p><b>EUR 116.00</b></p>
+                        <p>EUR <span class="price">116.00 </span>
+                        </p>
+                        <p><i class="fa-solid fa-xmark"></i></p>
+
                     </div>
                 </div>
                 <div class="eye22">
@@ -125,27 +102,23 @@
                             <h3>Total Eye Lift
                             </h3>
                         </div>
-                        <p class="price">EUR 62.00</p>
-                    </div>
-                    <div class="cart subtotal">
-                        <p>Subtotal</p>
-                        <p>EUR 62.00</p>
-                    </div>
-                    <div class="cart">
-                        <p>Shipping</p>
-                        <p>FREE</p>
-                    </div>
-                    <hr>
-                    <div class="cart">
-                        <p><b>Total</b></p>
-                        <p><b>EUR 62.00</b></p>
+                        <p>EUR <span class="price">62.00 </span>
+                        </p>
+                        <p><i class="fa-solid fa-xmark"></i></p>
+
                     </div>
                 </div>
-                <!-- <div class="cart">
+                <hr>
+                <div class="cart">
+                    <p>Shipping</p>
+                    <p>FREE</p>
+
+                </div>
+                <div class="cart">
                     <p><b>Total</b></p>
                     <p class="total">EUR 116.00</p>
-                </div> -->
-                <!-- <div class="upsells">
+                </div>
+                <div class="upsells">
                     <div class="upsell-cream">
                         <img src="./images/80105569_original_original_1.webp" alt="">
                         <h3>Super Restorative Rose Radiance Cream</h3>
@@ -158,16 +131,16 @@
                         <h3>Super Restorative Remodelling Serum
                         </h3>
                         <p>EUR 116.00</p>
-                        <button>Add to cart</button>
+                        <button onclick="addSerum()">Add to cart</button>
                     </div>
                     <div class="upsell-eye">
                         <img src="./images/80068482_original_original_A.webp" alt="">
                         <h3>Total Eye Lift
                         </h3>
                         <p>EUR 62.00</p>
-                        <button>Add to cart</button>
+                        <button onclick="addEye()">Add to cart</button>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -206,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <p class="disclaimer">Individual results may vary depending on skin type, sensitivity, skincare products
+        <p class="disclaimer">Individual results may lety depending on skin type, sensitivity, skincare products
             combinations, skincare history, as well as how the products are applied and stored.
 
 
@@ -215,13 +188,11 @@
 
 
     <script>
-
-        var myParam = location.search.split('fname=')[1].slice(0, 6);
+        let myParam = location.search.split('fname=')[1].slice(0, 6);
 
         let cream = document.getElementsByClassName('cream')
         let serum = document.getElementsByClassName('serum')
         let eye = document.getElementsByClassName('eye22')
-
 
         let creamUpsell = document.getElementsByClassName('upsell-cream')
         let serumUpsell = document.getElementsByClassName('upsell-serum')
@@ -232,50 +203,97 @@
 
         if (myParam == "&cream") {
             cream[0].style.display = "block";
-            console.log(cream[0])
             creamUpsell[0].style.display = "none";
-
         } else if (myParam == "&serum") {
             serum[0].style.display = "block";
-            console.log(serum[0])
             serumUpsell[0].style.display = "none";
-
         } else if (myParam == "&eye11") {
             eye[0].style.display = "block";
-            console.log(eye[0])
             eyeUpsell[0].style.display = "none";
-
         }
-        // function addCream() {
-        //     cream[0].style.display = "block";
-        //     cream[0].children[1].style.display = "none";
-        //     cream[0].children[2].style.display = "none";
-        //     window.history.replaceState(null, null, "step2.html?fname=&serum=BUY+NOW&arg=cream");
-        //     let myParam2 = location.search.slice(-5);
-        //     console.log(creamUpsell[0])
-        //     creamUpsell[0].style.display = "none"
-        //     console.log(total)
-        //     console.log(price)
-        //     for (let i = 0; i < array.length; i++) {
-        //         const element = array[i];
-                
-        //     }
 
-        // }
+        function addCream() {
+            cream[0].style.display = "block";
+            creamUpsell[0].style.display = "none"
+            totalSum();
+            addParamsCream();
+        }
+
+        function addEye() {
+            eye[0].style.display = "block";
+            eyeUpsell[0].style.display = "none"
+            totalSum();
+            addParamsEye();
+        }
+
+        function addSerum() {
+            serum[0].style.display = "block";
+            serumUpsell[0].style.display = "none"
+            totalSum();
+            addParamsSerum();
+        }
+
+        function addParamsSerum() {
+            let myParam2 = location.href;
+            let myParam5 = location.search;
+            if (!myParam5.includes("serum")) {
+                window.history.replaceState(null, null, myParam2 + "&arg=serum");
+            }
+        }
+
+        function addParamsEye() {
+            let myParam2 = location.href;
+            let myParam5 = location.search;
+            if (!myParam5.includes("eye22")) {
+                window.history.replaceState(null, null, myParam2 + "&arg=eye22");
+            }
+        }
+
+        function addParamsCream() {
+            let myParam2 = location.href;
+            let myParam5 = location.search;
+            console.log(myParam5)
+            if (!myParam5.includes("cream")) {
+                window.history.replaceState(null, null, myParam2 + "&arg=cream");
+            }
+        }
+
+        function totalSum() {
+            let sum = 0;
+
+            if (serum[0].style.display == "block") {
+                sum += Number(serum[0].children[0].children[1].children[0].innerHTML)
+            }
+
+            if (cream[0].style.display == "block") {
+                sum += Number(cream[0].children[0].children[1].children[0].innerHTML)
+            }
+
+            if (eye[0].style.display == "block") {
+                console.log(Number(eye[0].children[0].children[1].children[0].innerHTML))
+                sum += Number(eye[0].children[0].children[1].children[0].innerHTML)
+            }
+            total[0].innerHTML = "EUR " + sum;
+        }
+
+        if (location.search.includes("cream")) {
+            addCream()
+        }
+        if (location.search.includes("eye22")) {
+            addEye()
+        }
+        if (location.search.includes("serum")) {
+            addSerum()
+        }
 
 
-
-
-        // if (serum[0].style.display == "block") {
-        //     console.log("aa")
-        // }
 
     </script>
-    <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
+    <!-- <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
     <script src='/cdn/js/fa_events.js'></script>
     <script>
         fa_get_data('PageViewCover');
-    </script>
+    </script> -->
 </body>
 
 </html>
