@@ -182,3 +182,38 @@ select {
     font-weight: 900;
     
 }
+
+@media screen and (max-width: 1200px) {
+
+    .right {
+        width: 80%;
+    }
+    form {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 25px;
+    }
+
+    .cart img {
+        width: 100px;
+        background-blend-mode: multiply;
+    }
+
+
+
+}
