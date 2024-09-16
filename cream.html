@@ -344,7 +344,11 @@
                 <h3>BUILD YOUR SUPER RESTORATIVE RITUAL</h3>
                 <h4>Ultra-effective formulas, for skin's changing needs</h4>
                 <div class="order-btn">
-                    <a href="./step2.html" class="cta">BUY NOW</a>
+                    <!-- <a href="./step2.html" class="cta">BUY NOW</a> -->
+                    <form class="order-btn" action="./step2.html" method="get">
+                        <input style="display: none;" type="number" id="fname" name="fname" min="0" max="3"> 
+                        <input type="submit" class="cta" name="cream" value="BUY NOW">
+                    </form>
                 </div>
             </div>
             <img src="./images/cream/texture-desktop-@2x.webp" alt="">
