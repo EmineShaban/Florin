@@ -163,6 +163,7 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .upsells div img {
@@ -194,9 +195,14 @@ select {
     display: none;
     flex-direction: row;
     align-items: center;
-    margin-left: 15px;
 }
+.close{
+    margin: auto;
+    margin-left: 15px;
+    padding-bottom: 4px;
 
+
+}
 @media screen and (max-width: 1400px) {
 
     .cart {
@@ -242,7 +248,10 @@ select {
         background-blend-mode: multiply;
     }
 
-
+    .upsells div {
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
 
 }
 

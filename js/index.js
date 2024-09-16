@@ -95,3 +95,33 @@ const buttonGroupPressed = (e) => {
 for (let index = 0; index < buttonGroup.length; index++) {
     buttonGroup[index].addEventListener('click', buttonGroupPressed);
 }
+
+
+
+
+// review popup
+const button = document.getElementsByClassName('submitbtn');
+const popup = document.getElementById('popup');
+const closeBtn = document.querySelector('.close1');
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  popup.style.display = 'flex';
+  form.reset()
+
+})
+
+
+
+// Close popup when the close button is clicked
+closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+  
+  // Close popup when clicking outside of it
+  window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+  
